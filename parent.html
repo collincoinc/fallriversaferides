@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find a Ride | Fall River Safe Rides</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b2c4a;
+      color: white;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    form {
+      background: #123a5e;
+      padding: 25px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffc107;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #ffc107;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Find a Ride</h1>
+    <p>Submit your transportation request for Fall River student rides.</p>
+
+    <form>
+      <label>Parent or Guardian Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Phone Number</label>
+      <input type="text" placeholder="Enter your phone number">
+
+      <label>Pickup Location</label>
+      <input type="text" placeholder="Enter pickup location">
+
+      <label>Dropoff Location</label>
+      <input type="text" placeholder="Enter dropoff location">
+
+      <label>Ride Type</label>
+      <select>
+        <option>One-time ride</option>
+        <option>Recurring ride</option>
+      </select>
+
+      <label>Schedule Details</label>
+      <textarea rows="4" placeholder="Example: Monday-Friday, pickup at 7:15 AM"></textarea>
+
+      <label>Additional Details</label>
+      <textarea rows="4" placeholder="Anything transportation companies should know"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <a class="back" href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
