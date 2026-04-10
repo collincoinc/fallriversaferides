@@ -13,7 +13,7 @@
     }
 
     .container {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
@@ -28,7 +28,7 @@
       margin: 0 auto 30px;
     }
 
-    /* BUTTON SQUARES */
+    /* OPTION BOXES */
     .options {
       display: flex;
       flex-direction: column;
@@ -40,9 +40,14 @@
     .box {
       padding: 25px;
       border-radius: 10px;
-      cursor: pointer;
       font-size: 20px;
       font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
     }
 
     .parent {
@@ -55,11 +60,15 @@
       color: #0b2c4a;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     /* SECTIONS */
     .section {
-      margin: 60px auto;
       max-width: 700px;
-      text-align: left;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
     .section h2 {
@@ -87,11 +96,6 @@
       text-align: center;
       background-color: #081f33;
     }
-
-    a {
-      color: #ffc107;
-      text-decoration: none;
-    }
   </style>
 </head>
 
@@ -99,14 +103,20 @@
 
   <div class="container">
     <h1>Fall River Safe Rides</h1>
+
     <p>
       Safe, reliable student transportation in Fall River.  
       Request rides and receive offers from local transportation companies.
     </p>
 
     <div class="options">
-      <div class="box parent">Find a Ride</div>
-      <div class="box company">Join as a Transportation Company</div>
+      <a href="parent.html">
+        <div class="box parent">Find a Ride</div>
+      </a>
+
+      <a href="company.html">
+        <div class="box company">Join as a Transportation Company</div>
+      </a>
     </div>
   </div>
 
@@ -142,8 +152,8 @@
   <div class="section">
     <h2>Built for Fall River</h2>
     <p>
-      Fall River Safe Rides is focused on helping families and transportation
-      companies connect in one place to make transportation safer and more reliable.
+      Fall River Safe Rides helps families and transportation companies connect
+      in one place to make transportation safer and more reliable.
     </p>
   </div>
 
